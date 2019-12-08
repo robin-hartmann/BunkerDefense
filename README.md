@@ -3,6 +3,7 @@
     - v3 (obsolete version with more documentation)
         - [git repo](https://github.com/ExtendRealityLtd/VRTK/tree/3.3.0)
         - [docs](https://vrtoolkit.readme.io/v3.3.0)
+            - [Instructions for using the VR Simulator](https://vrtoolkit.readme.io/docs/getting-started#section-vr-simulator)
     - v4 (beta version with support for SteamVR 2.0; **this is the version we use**)
         - [main git repo](https://github.com/ExtendRealityLtd/VRTK)
         - [prefabs git repo](https://github.com/ExtendRealityLtd/VRTK.Prefabs)
