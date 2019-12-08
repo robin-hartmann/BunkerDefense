@@ -1,3 +1,7 @@
 [submodule "VRTK sample"]
 	path = Assets/VRTK
 	url = https://github.com/ExtendRealityLtd/VRTK
+	# Unity automatically creates .meta files for all files inside the Assets folder
+	# inlcuding the VRTK sample subproject which causes git to mark the subproject
+	# as modified, which we don't want, so we ignore untracked files
+	ignore = dirty
