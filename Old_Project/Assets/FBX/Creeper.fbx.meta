@@ -1,0 +1,179 @@
+fileFormatVersion: 2
+guid: a60cff0b4c4685342a55e3a2a93b42c2
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Back
+    100002: Back_Left
+    100004: Back_Left_Ankle_Pivot
+    100006: Back_Left_Controller
+    100008: Back_Left_Knee
+    100010: Back_Left_Leg
+    100012: Back_Left_Leg_2
+    100014: Back_Right
+    100016: Back_Right_Ankle_Pivot
+    100018: Back_Right_Controller
+    100020: Back_Right_Knee
+    100022: Back_Right_Leg
+    100024: Back_Right_Leg_2
+    100026: Body
+    100028: Cinema_4D_Editor
+    100030: //RootNode
+    100032: curveBubbles
+    100034: Front_Left
+    100036: Front_Left_Ankle_Pivot
+    100038: Front_Left_Controller
+    100040: Front_Left_Knee
+    100042: Front_Left_Leg
+    100044: Front_Left_Leg1
+    100046: Front_Right
+    100048: Front_Right_Ankle_Pivot
+    100050: Front_Right_Controller
+    100052: Front_Right_Knee
+    100054: Front_Right_Leg
+    100056: Front_Right_Leg_2
+    100058: Head
+    100060: ikHandle5
+    100062: joint1
+    100064: Neck_Controller
+    100066: Root
+    400000: Back
+    400002: Back_Left
+    400004: Back_Left_Ankle_Pivot
+    400006: Back_Left_Controller
+    400008: Back_Left_Knee
+    400010: Back_Left_Leg
+    400012: Back_Left_Leg_2
+    400014: Back_Right
+    400016: Back_Right_Ankle_Pivot
+    400018: Back_Right_Controller
+    400020: Back_Right_Knee
+    400022: Back_Right_Leg
+    400024: Back_Right_Leg_2
+    400026: Body
+    400028: Cinema_4D_Editor
+    400030: //RootNode
+    400032: curveBubbles
+    400034: Front_Left
+    400036: Front_Left_Ankle_Pivot
+    400038: Front_Left_Controller
+    400040: Front_Left_Knee
+    400042: Front_Left_Leg
+    400044: Front_Left_Leg1
+    400046: Front_Right
+    400048: Front_Right_Ankle_Pivot
+    400050: Front_Right_Controller
+    400052: Front_Right_Knee
+    400054: Front_Right_Leg
+    400056: Front_Right_Leg_2
+    400058: Head
+    400060: ikHandle5
+    400062: joint1
+    400064: Neck_Controller
+    400066: Root
+    2000000: Cinema_4D_Editor
+    2300000: Head
+    3300000: Head
+    4300000: Head
+    4300002: Body
+    4300004: Back_Right_Leg_2
+    4300006: Back_Left_Leg_2
+    4300008: Front_Right_Leg_2
+    4300010: Front_Left_Leg1
+    9500000: //RootNode
+    13700000: Back_Left_Leg_2
+    13700002: Back_Right_Leg_2
+    13700004: Body
+    13700006: Front_Left_Leg1
+    13700008: Front_Right_Leg_2
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat
+    second: {fileID: 2100000, guid: f558d934c9e4d87429ef2044d7ebaee4, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 2
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
