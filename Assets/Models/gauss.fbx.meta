@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 21fc3cffaebabb045a22c90b38c449e5
+guid: 92064ddf2e7ed7a4f8c25f95a2c0201e
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
@@ -90,5 +90,5 @@ ModelImporter:
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
-  assetBundleName: gauss
+  assetBundleName: 
   assetBundleVariant: 
