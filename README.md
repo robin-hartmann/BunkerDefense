@@ -11,6 +11,7 @@
     - [git repo](https://github.com/ExtendRealityLtd/VRTK/tree/3.3.0)
     - [docs](https://vrtoolkit.readme.io/v3.3.0)
         - [Instructions for using the VR Simulator](https://vrtoolkit.readme.io/docs/getting-started#section-vr-simulator)
+    - [tutorial videos](https://www.youtube.com/channel/UCWRk-LEMUNoZxUmY1wO7DBQ/search?query=vrtk+v3)
 
 ## Guides used for initial project creation
 - [How to Git with Unity](https://thoughtbot.com/blog/how-to-git-with-unity)
