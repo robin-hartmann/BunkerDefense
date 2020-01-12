@@ -622,7 +622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3ee2f9e60f6dee4d85e8ca950ed2e39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: -927199367670048503, guid: 6aa07f9eed6ce9641a8589ebde02b7c5,
+  objectToSpawn: {fileID: 5418800842273747192, guid: 5681bc4f78b3abb46b6a324d66f3ecda,
     type: 3}
   numberOfObjectsToSpawnPerWave: 4
   delayBetweenWavesInMs: 30000
