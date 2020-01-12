@@ -544,12 +544,6 @@ MonoBehaviour:
   gripSenseAxisChanged: 0
   gripSensePressed: 0
   controllerVisible: 1
---- !u!4 &541906854 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3600829424215780118, guid: aeec2557f69e87c4bb8c60305c9c8745,
-    type: 3}
-  m_PrefabInstance: {fileID: 669171374451877092}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &686291563
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,7 +620,7 @@ MonoBehaviour:
     type: 3}
   targetPosition: {x: 0, y: 0, z: 0}
   spawnPositionDeviation: 16
-  movementSpeed: 5
+  movementSpeed: 3
   triggerDistance: 4
   numberOfObjectsToSpawnPerWave: 30
   delayBetweenWavesInMs: 5000
@@ -655,6 +649,20 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 669171374451877092}
   m_PrefabAsset: {fileID: 0}
+--- !u!136 &761455043
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761455037}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  m_Radius: 0.00010429978
+  m_Height: 0.105235055
+  m_Direction: 2
+  m_Center: {x: -0.000001848936, y: -0.000004161258, z: 0.052547853}
 --- !u!1 &809217378 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7602279746381541769, guid: 22bcce0ec7e987e4f98767202f5d6c42,
@@ -1304,90 +1312,11 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 669171374451877092}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2040566841
+--- !u!114 &2040566845 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2040566839}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc2315305343a584e8758755b54117c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clipOnNearTouch: {fileID: 0}
-  strengthOnNearTouch: 0
-  durationOnNearTouch: 0
-  intervalOnNearTouch: 0.05
-  cancelOnNearUntouch: 1
-  clipOnTouch: {fileID: 0}
-  strengthOnTouch: 0
-  durationOnTouch: 0
-  intervalOnTouch: 0.05
-  cancelOnUntouch: 1
-  clipOnGrab: {fileID: 0}
-  strengthOnGrab: 0
-  durationOnGrab: 0
-  intervalOnGrab: 0.05
-  cancelOnUngrab: 1
-  clipOnUse: {fileID: 0}
-  strengthOnUse: 0
-  durationOnUse: 0
-  intervalOnUse: 0.05
-  cancelOnUnuse: 1
-  objectToAffect: {fileID: 0}
---- !u!54 &2040566842
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2040566839}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &2040566843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2040566839}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18055ba762aa3994f9c10208cd088bc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2040566844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2040566839}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ec2ac476f2fc9a45a4e69712580a603, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  precisionGrab: 0
-  rightSnapHandle: {fileID: 541906854}
-  leftSnapHandle: {fileID: 0}
-  throwVelocityWithAttachDistance: 0
-  throwMultiplier: 1
-  onGrabCollisionDelay: 0
---- !u!114 &2040566845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3023658069754661430, guid: aeec2557f69e87c4bb8c60305c9c8745,
+    type: 3}
+  m_PrefabInstance: {fileID: 669171374451877092}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040566839}
   m_Enabled: 1
@@ -1395,27 +1324,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3abaf4521bf2344ea21ed3020b98eb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  disableWhenIdle: 1
-  allowedNearTouchControllers: 0
-  allowedTouchControllers: 0
-  ignoredColliders: []
-  isGrabbable: 1
-  holdButtonToGrab: 0
-  stayGrabbedOnTeleport: 1
-  validDrop: 0
-  grabOverrideButton: 0
-  allowedGrabControllers: 0
-  grabAttachMechanicScript: {fileID: 2040566844}
-  secondaryGrabActionScript: {fileID: 2040566843}
-  isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
-  pointerActivatesUseAction: 0
-  useOverrideButton: 0
-  allowedUseControllers: 0
-  objectHighlighter: {fileID: 0}
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
-  usingState: 0
 --- !u!64 &2040566846
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1430,33 +1338,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 8351233296609544797, guid: 7adb32f12be211844adc2995a75a2646, type: 3}
---- !u!114 &2040566847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2040566839}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7340d3737e4222b47bd61a303c79cc5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  muzzleFlash: {fileID: 761455037}
-  controllerEvents: {fileID: 1291724855}
---- !u!65 &2040566848
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2040566839}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.052481055, y: 0.1207397, z: 0.64345455}
-  m_Center: {x: -0.005464971, y: 0.12300789, z: 0.15735197}
 --- !u!1 &1000751257967088
 GameObject:
   m_ObjectHideFlags: 0
@@ -5436,37 +5317,12 @@ PrefabInstance:
     - target: {fileID: 3611221328558598835, guid: aeec2557f69e87c4bb8c60305c9c8745,
         type: 3}
       propertyPath: m_Name
-      value: GaussRifleWithMuzzleFlash
+      value: GaussRifleWithRay
       objectReference: {fileID: 0}
-    - target: {fileID: 3600829424215780118, guid: aeec2557f69e87c4bb8c60305c9c8745,
+    - target: {fileID: 1201030130642393467, guid: aeec2557f69e87c4bb8c60305c9c8745,
         type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3600829424215780118, guid: aeec2557f69e87c4bb8c60305c9c8745,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3600829424215780118, guid: aeec2557f69e87c4bb8c60305c9c8745,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3600829424215780118, guid: aeec2557f69e87c4bb8c60305c9c8745,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3600829424215780118, guid: aeec2557f69e87c4bb8c60305c9c8745,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3600829424215780118, guid: aeec2557f69e87c4bb8c60305c9c8745,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      propertyPath: m_Name
+      value: Ray
       objectReference: {fileID: 0}
     - target: {fileID: 308210094277548192, guid: aeec2557f69e87c4bb8c60305c9c8745,
         type: 3}
@@ -5523,16 +5379,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 6444611525666815086, guid: aeec2557f69e87c4bb8c60305c9c8745,
+    - target: {fileID: 8832288781157522386, guid: aeec2557f69e87c4bb8c60305c9c8745,
         type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6444611525666815086, guid: aeec2557f69e87c4bb8c60305c9c8745,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: controllerEvents
       value: 
-      objectReference: {fileID: 2100000, guid: d43eb1cba2939624dba5ef1584a35fb7, type: 2}
+      objectReference: {fileID: 1291724855}
+    - target: {fileID: 3600829424215780118, guid: aeec2557f69e87c4bb8c60305c9c8745,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3600829424215780118, guid: aeec2557f69e87c4bb8c60305c9c8745,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9172098146908581106, guid: aeec2557f69e87c4bb8c60305c9c8745,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -5553,6 +5414,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.002
       objectReference: {fileID: 0}
+    - target: {fileID: 8242981501091001302, guid: aeec2557f69e87c4bb8c60305c9c8745,
+        type: 3}
+      propertyPath: m_Name
+      value: SnapHandle
+      objectReference: {fileID: 0}
     - target: {fileID: 8058337446382857048, guid: aeec2557f69e87c4bb8c60305c9c8745,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -5562,21 +5428,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.399
-      objectReference: {fileID: 0}
-    - target: {fileID: 8058337446382857048, guid: aeec2557f69e87c4bb8c60305c9c8745,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 8058337446382857048, guid: aeec2557f69e87c4bb8c60305c9c8745,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 8058337446382857048, guid: aeec2557f69e87c4bb8c60305c9c8745,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 8058337446382857048, guid: aeec2557f69e87c4bb8c60305c9c8745,
         type: 3}
