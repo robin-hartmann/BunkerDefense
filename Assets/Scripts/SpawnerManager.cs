@@ -7,7 +7,11 @@ using UnityEngine;
 
 public class SpawnerManager : MonoBehaviour
 {
-    public UnityEngine.Object objectToSpawn;
+    public GameObject objectToSpawn;
+    public Vector3 targetPosition;
+    public float spawnPositionDeviation = 5;
+    public float movementSpeed = 5;
+    public float triggerDistance = 3;
     public int numberOfObjectsToSpawnPerWave = 4;
     public double delayBetweenWavesInMs = 30000;
     public double delayBetweenSpawnsInMs = 3000;
@@ -23,7 +27,7 @@ public class SpawnerManager : MonoBehaviour
     void Start()
     {
         spawners = FindObjectsOfType<Spawner>();
-
+        
         waveTimer = new Timer(delayBetweenWavesInMs);
         spawnTimer = new Timer(delayBetweenSpawnsInMs);
         waveTimer.Elapsed += StartWave;
@@ -57,8 +61,14 @@ public class SpawnerManager : MonoBehaviour
     private void SpawnNextObject(object sender, ElapsedEventArgs e)
     {
         mainThreadQueue.Enqueue(() => {
-            Instantiate(objectToSpawn, spawners[nextSpawnerIndex].transform);
-            nextSpawnerIndex = (nextSpawnerIndex + 1) % spawners.Length;
+            GameObject gameObject = Instantiate(objectToSpawn, spawners[nextSpawnerIndex].transform);
+            gameObject.transform.Translate(transform.right * UnityEngine.Random.Range(-spawnPositionDeviation, spawnPositionDeviation));
+            Attack attack = gameObject.AddComponent<Attack>();
+            attack.targetPosition = targetPosition;
+            attack.movementSpeed = movementSpeed;
+            attack.triggerDistance = triggerDistance;
+
+            nextSpawnerIndex = UnityEngine.Random.Range(0, spawners.Length);
 
             if (--objectsLeftToSpawn > 0)
             {
