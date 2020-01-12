@@ -1356,7 +1356,7 @@ MonoBehaviour:
   isGrabbable: 1
   holdButtonToGrab: 0
   stayGrabbedOnTeleport: 1
-  validDrop: 1
+  validDrop: 0
   grabOverrideButton: 0
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 2040566844}
