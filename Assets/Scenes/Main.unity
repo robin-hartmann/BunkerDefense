@@ -524,7 +524,7 @@ GameObject:
   - component: {fileID: 570970674}
   - component: {fileID: 570970673}
   m_Layer: 0
-  m_Name: InteractableCube
+  m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -936,7 +936,7 @@ GameObject:
   - component: {fileID: 1484518242}
   - component: {fileID: 1484518241}
   m_Layer: 0
-  m_Name: LightingFirstFloor
+  m_Name: FirstFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1063,7 +1063,7 @@ GameObject:
   - component: {fileID: 1548954331}
   - component: {fileID: 1548954330}
   m_Layer: 0
-  m_Name: Directional Light
+  m_Name: Sun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
