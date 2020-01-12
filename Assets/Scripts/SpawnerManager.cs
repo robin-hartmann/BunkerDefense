@@ -56,16 +56,18 @@ public class SpawnerManager : MonoBehaviour
 
     private void SpawnNextObject(object sender, ElapsedEventArgs e)
     {
-        mainThreadQueue.Enqueue(() => Instantiate(objectToSpawn, spawners[nextSpawnerIndex].transform));
-        nextSpawnerIndex = (nextSpawnerIndex + 1) % spawners.Length;
+        mainThreadQueue.Enqueue(() => {
+            Instantiate(objectToSpawn, spawners[nextSpawnerIndex].transform);
+            nextSpawnerIndex = (nextSpawnerIndex + 1) % spawners.Length;
 
-        if (--objectsLeftToSpawn > 0)
-        {
-            spawnTimer.Start();
-        }
-        else
-        {
-            waveTimer.Start();
-        }
+            if (--objectsLeftToSpawn > 0)
+            {
+                spawnTimer.Start();
+            }
+            else
+            {
+                waveTimer.Start();
+            }
+        });
     }
 }
