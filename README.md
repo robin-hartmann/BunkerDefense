@@ -1,6 +1,6 @@
 ## Getting Started
 1. clone this repo
-1. open the folder `Assets/VRTK` in terminal
+1. open the folder `Assets/Third/VRTK` in terminal
 1. run the following commands
     1. `git submodule init`
     1. `git submodule update`
