@@ -60,13 +60,13 @@ public class SpawnerManager : MonoBehaviour
     private void SpawnNextObject()
     {
         GameObject gameObject = Instantiate(objectToSpawn, spawners[nextSpawnerIndex].transform);
-        gameObject.transform.Translate(transform.right * UnityEngine.Random.Range(-spawnPositionDeviation, spawnPositionDeviation));
+        gameObject.transform.Translate(transform.right * Random.Range(-spawnPositionDeviation, spawnPositionDeviation));
         Attack attack = gameObject.AddComponent<Attack>();
         attack.targetPosition = targetPosition;
         attack.movementSpeed = movementSpeed;
         attack.triggerDistance = triggerDistance;
 
-        nextSpawnerIndex = UnityEngine.Random.Range(0, spawners.Length);
+        nextSpawnerIndex = Random.Range(0, spawners.Length);
 
         if (--objectsLeftToSpawn > 0)
         {
