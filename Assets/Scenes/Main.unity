@@ -1312,6 +1312,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 669171374451877092}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2040566841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040566839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817f15b2a0426974bb4e88ef34aa22b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideControllerOnTouch: 1
+  hideDelayOnTouch: 0
+  hideControllerOnGrab: 1
+  hideDelayOnGrab: 0
+  hideControllerOnUse: 1
+  hideDelayOnUse: 0
 --- !u!114 &2040566845 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3023658069754661430, guid: aeec2557f69e87c4bb8c60305c9c8745,
