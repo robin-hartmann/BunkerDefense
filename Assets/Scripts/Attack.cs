@@ -18,6 +18,7 @@ public class Attack : MonoBehaviour
         if (Vector3.Distance(transform.position, targetPosition) <= triggerDistance)
         {
             Destroy(gameObject);
+            GameManager.GameOver();
             return;
         }
 

@@ -14,11 +14,35 @@ public class SpawnerManager : MonoBehaviour
     public float delayBetweenSpawnsInS = 3;
     
     private Spawner[] spawners;
+    private Timer spawnTimer;
+    private Timer waveTimer;
 
     private int nextSpawnerIndex;
     private int objectsLeftToSpawn;
+
+    public void Reset()
+    {
+        Attack[] attacks = FindObjectsOfType<Attack>();
+
+        foreach (Attack attack in attacks)
+        {
+            Destroy(attack.gameObject);
+        }
+
+        if (spawnTimer?.isDone == false)
+        {
+            spawnTimer.Cancel();
+        }
+
+        if (waveTimer?.isDone == false)
+        {
+            spawnTimer.Cancel();
+        }
+
+        StartWave();
+    }
     
-    void Start()
+    private void Awake()
     {
         spawners = FindObjectsOfType<Spawner>();
 
@@ -46,11 +70,11 @@ public class SpawnerManager : MonoBehaviour
 
         if (--objectsLeftToSpawn > 0)
         {
-            Timer.Register(delayBetweenSpawnsInS, SpawnNextObject);
+            spawnTimer = Timer.Register(delayBetweenSpawnsInS, SpawnNextObject);
         }
         else
         {
-            Timer.Register(delayBetweenWavesInS, StartWave);
+            waveTimer = Timer.Register(delayBetweenWavesInS, StartWave);
         }
     }
 }
