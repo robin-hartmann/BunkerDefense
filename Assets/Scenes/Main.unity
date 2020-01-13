@@ -623,8 +623,8 @@ MonoBehaviour:
   movementSpeed: 3
   triggerDistance: 4
   numberOfObjectsToSpawnPerWave: 15
-  delayBetweenWavesInMs: 5000
-  delayBetweenSpawnsInMs: 1000
+  delayBetweenWavesInS: 5
+  delayBetweenSpawnsInS: 1
 --- !u!4 &698276747
 Transform:
   m_ObjectHideFlags: 0
