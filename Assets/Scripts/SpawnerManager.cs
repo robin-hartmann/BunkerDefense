@@ -18,8 +18,8 @@ public class SpawnerManager : MonoBehaviour
 
     private readonly ConcurrentQueue<Action> mainThreadQueue = new ConcurrentQueue<Action>();
     private Spawner[] spawners;
-    private Timer waveTimer;
-    private Timer spawnTimer;
+    private System.Timers.Timer waveTimer;
+    private System.Timers.Timer spawnTimer;
 
     private int nextSpawnerIndex;
     private int objectsLeftToSpawn;
@@ -28,8 +28,8 @@ public class SpawnerManager : MonoBehaviour
     {
         spawners = FindObjectsOfType<Spawner>();
         
-        waveTimer = new Timer(delayBetweenWavesInMs);
-        spawnTimer = new Timer(delayBetweenSpawnsInMs);
+        waveTimer = new System.Timers.Timer(delayBetweenWavesInMs);
+        spawnTimer = new System.Timers.Timer(delayBetweenSpawnsInMs);
         waveTimer.Elapsed += StartWave;
         spawnTimer.Elapsed += SpawnNextObject;
         waveTimer.AutoReset = false;
