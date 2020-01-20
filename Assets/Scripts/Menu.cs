@@ -4,14 +4,18 @@ using VRTK;
 
 public class Menu : MonoBehaviour
 {
+    private enum Mode
+    {
+        Start,
+        Pause,
+        GameOver
+    };
+
     public VRTK_ControllerEvents controllerEventsLeft;
-    public VRTK_ControllerEvents controllerEventsRight;
-    //public VRTK_ControllerEvents controllerEvents;
     public GameObject menu;
     public GameObject menuText;
     private Text text;
-
-    bool MenuState = true;
+    private currentMode Mode = Mode.Start;
 
     void Start()
     {
@@ -19,19 +23,16 @@ public class Menu : MonoBehaviour
         text.text = "Keep the Wheelers from Blowing up your tower!";
         
         TimeManager.Pause();
+        controllerEventsLeft.ButtonTwoReleased += ToggleMenu;
     }
 
     private void OnEnable()
     {
-        //controllerEvents.ButtonTwoReleased += ToggleMenu;
-        controllerEventsLeft.ButtonTwoReleased += ToggleMenu;
-        controllerEventsRight.ButtonTwoReleased += ToggleMenu;
     }
+
     private void OnDisable()
     {
-        //controllerEvents.ButtonTwoReleased -= ToggleMenu;
-        controllerEventsLeft.ButtonTwoPressed -= ToggleMenu;
-        controllerEventsRight.ButtonTwoPressed -= ToggleMenu;
+        controllerEventsLeft.ButtonTwoReleased -= ToggleMenu;
         TimeManager.Resume();
     }
 
@@ -54,5 +55,25 @@ public class Menu : MonoBehaviour
             TimeManager.Resume();
         }
         menu.SetActive(MenuState);
+    }
+
+    private void HideMenu()
+    {
+
+    }
+
+    private void ShowMenuStart()
+    {
+
+    }
+
+    private void ShowMenuPause()
+    {
+
+    }
+
+    private void ShowMenuGameOver()
+    {
+
     }
 }
