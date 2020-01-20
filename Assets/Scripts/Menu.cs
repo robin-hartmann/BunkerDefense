@@ -4,7 +4,7 @@ using VRTK;
 
 public class Menu : MonoBehaviour
 {
-    private enum Mode
+    public enum Mode
     {
         Start,
         Pause,
@@ -15,51 +15,72 @@ public class Menu : MonoBehaviour
     public GameObject menu;
     public GameObject menuText;
     private Text text;
-    private currentMode Mode = Mode.Start;
+    private Mode? currentMode;
 
     void Start()
     {
-        text = menuText.GetComponent<Text>();
-        text.text = "Keep the Wheelers from Blowing up your tower!";
-        
-        TimeManager.Pause();
-        controllerEventsLeft.ButtonTwoReleased += ToggleMenu;
+        controllerEventsLeft.ButtonTwoPressed += ToggleMenu;
+        ShowMenu(Mode.Pause); // FIXME
     }
 
     private void OnEnable()
     {
+        TimeManager.Pause();
     }
 
     private void OnDisable()
     {
-        controllerEventsLeft.ButtonTwoReleased -= ToggleMenu;
         TimeManager.Resume();
     }
 
-    public void Reset()
+    private void Reset()
     {
-        Debug.Log("Reset");
         GameManager.Reset();
     }
 
     private void ToggleMenu(object sender, ControllerInteractionEventArgs e)
     {
-        MenuState = !MenuState;
-        if(MenuState)
+        if (currentMode == Mode.Start || currentMode == Mode.GameOver)
         {
-            text = menuText.GetComponent<Text>();
-            text.text = "Hmm! Continue or reset the game?";
-            //TimeManager.Pause();
-        } else
-        {
-            TimeManager.Resume();
+            return;
         }
-        menu.SetActive(MenuState);
+
+        if (currentMode == null)
+        {
+            ShowMenu(Mode.Pause);
+        }
+        else
+        {
+            HideMenu();
+        }
     }
 
-    private void HideMenu()
+    public void HideMenu()
     {
+        currentMode = null;
+        menu.SetActive(false);
+    }
 
+    public void ShowMenu(Mode mode)
+    {
+        currentMode = mode;
+
+        switch (mode)
+        {
+            case Mode.Start:
+                ShowMenuStart();
+                break;
+
+            case Mode.Pause:
+                ShowMenuPause();
+                break;
+
+            case Mode.GameOver:
+                ShowMenuGameOver();
+                break;
+        }
+
+        menu.SetActive(true);
     }
 
     private void ShowMenuStart()
