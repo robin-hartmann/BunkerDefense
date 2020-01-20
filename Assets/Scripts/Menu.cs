@@ -21,6 +21,9 @@ public class Menu : MonoBehaviour
     void Start()
     {
         controllerEventsLeft.ButtonTwoPressed += ToggleMenu;
+        // delay showing of menu, so game is not paused immediately
+        // otherwise the pointer doesn't work
+        Timer.Register(0.1f, () => { ShowMenuStart(); });
     }
 
     public void HideMenu()
@@ -33,27 +36,27 @@ public class Menu : MonoBehaviour
     public void ShowMenuStart()
     {
         textMenu.GetComponent<Text>().text = "Welcome to Tower Defense!\n\nDestroy the Wheelers with your gun\nbefore they blow up your bunker!";
+        buttonTop.GetComponentInChildren<Text>().text = "Start";
         buttonTop.SetActive(true);
-        buttonTop.GetComponent<Text>().text = "Start";
         buttonBottom.SetActive(false);
         ShowMenu(Mode.Start);
     }
 
     public void ShowMenuPause(int wheelersDestroyedCount)
     {
-        textMenu.GetComponent<Text>().text = $"PAUSED\n\nYou have destroyed {wheelersDestroyedCount} until now.";
+        textMenu.GetComponent<Text>().text = $"PAUSED\n\nYou have destroyed {wheelersDestroyedCount} Wheelers until now.";
+        buttonTop.GetComponentInChildren<Text>().text = "Continue";
         buttonTop.SetActive(true);
-        buttonTop.GetComponent<Text>().text = "Continue";
+        buttonTop.GetComponentInChildren<Text>().text = "Reset";
         buttonBottom.SetActive(true);
-        buttonTop.GetComponent<Text>().text = "Reset";
         ShowMenu(Mode.Pause);
     }
 
     public void ShowMenuGameOver(int wheelersDestroyedCount)
     {
         textMenu.GetComponent<Text>().text = $"GAME OVER\n\nYou were blown up!\nBut you managed to destroy {wheelersDestroyedCount} Wheelers.";
+        buttonTop.GetComponentInChildren<Text>().text = "Reset";
         buttonTop.SetActive(true);
-        buttonTop.GetComponent<Text>().text = "Reset";
         buttonBottom.SetActive(false);
         ShowMenu(Mode.GameOver);
     }

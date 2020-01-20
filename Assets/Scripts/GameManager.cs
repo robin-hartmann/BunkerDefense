@@ -13,9 +13,6 @@ public static class GameManager
     private static void Initialize()
     {
         menu = Object.FindObjectOfType<Menu>();
-        // delay showing of menu, so game is not paused immediately
-        // otherwise the pointer doesn't work
-        Timer.Register(0.1f, () => { menu.ShowMenuStart() });
     }
 
     public static void IncrementDestroyedCounter()
