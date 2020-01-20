@@ -65,6 +65,8 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+/unityProject.vrmanifest
+
 
 ### Windows ###
 # Windows thumbnail cache files
