@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public static class GameManager
 {
     private static Menu menu;
+    private static bool wasGameOverTriggered = false;
 
     public static int WheelersDestroyedCount { get; private set; }
 
@@ -29,12 +30,24 @@ public static class GameManager
             spawnerManager.Reset();
         }
 
+        wasGameOverTriggered = false;
         WheelersDestroyedCount = 0;
         menu.ShowMenuStart();
     }
 
-    public static void GameOver()
+    public static void GameOver(GameObject explodedWheeler, GameObject explosion)
     {
-        menu.ShowMenuGameOver(WheelersDestroyedCount);
+        if (wasGameOverTriggered)
+        {
+            return;
+        }
+
+        wasGameOverTriggered = true;
+        Object.Instantiate(explosion, explodedWheeler.transform);
+
+        Timer.Register(2f, () =>
+        {
+            menu.ShowMenuGameOver(WheelersDestroyedCount);
+        });
     }
 }

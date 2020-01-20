@@ -7,6 +7,7 @@ public class Attack : MonoBehaviour
     public Vector3 targetPosition;
     public float triggerDistance;
     public float movementSpeed;
+    public GameObject explosion;
 
     private void Start()
     {
@@ -15,10 +16,17 @@ public class Attack : MonoBehaviour
 
     void Update()
     {
+        BoxCollider collider = gameObject.GetComponent<BoxCollider>();
+
+        if (!collider.enabled)
+        {
+            return;
+        }
+
         if (Vector3.Distance(transform.position, targetPosition) <= triggerDistance)
         {
-            Destroy(gameObject);
-            GameManager.GameOver();
+            collider.enabled = false;
+            GameManager.GameOver(gameObject, explosion);
             return;
         }
 

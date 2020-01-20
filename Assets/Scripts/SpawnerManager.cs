@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpawnerManager : MonoBehaviour
 {
     public GameObject objectToSpawn;
+    public GameObject explosion;
     public Vector3 targetPosition;
     public float spawnPositionDeviation = 5;
     public float movementSpeed = 5;
@@ -62,6 +63,7 @@ public class SpawnerManager : MonoBehaviour
         GameObject gameObject = Instantiate(objectToSpawn, spawners[nextSpawnerIndex].transform);
         gameObject.transform.Translate(transform.right * Random.Range(-spawnPositionDeviation, spawnPositionDeviation));
         Attack attack = gameObject.AddComponent<Attack>();
+        attack.explosion = explosion;
         attack.targetPosition = targetPosition;
         attack.movementSpeed = movementSpeed;
         attack.triggerDistance = triggerDistance;
