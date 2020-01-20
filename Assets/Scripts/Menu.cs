@@ -58,7 +58,7 @@ public class Menu : MonoBehaviour
         buttonTop.GetComponentInChildren<Text>().text = "Continue";
         buttonTop.SetActive(true);
 
-        Button.ButtonClickedEvent buttonBottomOnClick = buttonTop.GetComponent<Button>().onClick;
+        Button.ButtonClickedEvent buttonBottomOnClick = buttonBottom.GetComponent<Button>().onClick;
         buttonBottomOnClick.RemoveAllListeners();
         buttonBottomOnClick.AddListener(GameManager.Reset);
         buttonBottom.GetComponentInChildren<Text>().text = "Reset";
