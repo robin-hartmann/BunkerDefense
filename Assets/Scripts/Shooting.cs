@@ -17,7 +17,10 @@ public class Shooting : MonoBehaviour
 
     private void StartShooting(object sender, VRTK.ControllerInteractionEventArgs e)
     {
-        muzzleFlash.SetActive(true);
+        if (!TimeManager.IsPaused)
+        {
+            muzzleFlash.SetActive(true);
+        }
     }
 
     private void StopShooting(object sender, VRTK.ControllerInteractionEventArgs e)
