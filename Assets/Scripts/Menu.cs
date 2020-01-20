@@ -13,29 +13,49 @@ public class Menu : MonoBehaviour
 
     public VRTK_ControllerEvents controllerEventsLeft;
     public GameObject menu;
-    public GameObject menuText;
-    private Text text;
+    public GameObject textMenu;
+    public GameObject buttonTop;
+    public GameObject buttonBottom;
     private Mode? currentMode;
 
     void Start()
     {
         controllerEventsLeft.ButtonTwoPressed += ToggleMenu;
-        ShowMenu(Mode.Pause); // FIXME
     }
 
-    private void OnEnable()
+    public void HideMenu()
     {
-        TimeManager.Pause();
-    }
-
-    private void OnDisable()
-    {
+        currentMode = null;
+        menu.SetActive(false);
         TimeManager.Resume();
     }
 
-    private void Reset()
+    public void ShowMenuStart()
     {
-        GameManager.Reset();
+        textMenu.GetComponent<Text>().text = "Welcome to Tower Defense!\n\nDestroy the Wheelers with your gun\nbefore they blow up your bunker!";
+        buttonTop.SetActive(true);
+        buttonTop.GetComponent<Text>().text = "Start";
+        buttonBottom.SetActive(false);
+        ShowMenu(Mode.Start);
+    }
+
+    public void ShowMenuPause(int wheelersDestroyedCount)
+    {
+        textMenu.GetComponent<Text>().text = $"PAUSED\n\nYou have destroyed {wheelersDestroyedCount} until now.";
+        buttonTop.SetActive(true);
+        buttonTop.GetComponent<Text>().text = "Continue";
+        buttonBottom.SetActive(true);
+        buttonTop.GetComponent<Text>().text = "Reset";
+        ShowMenu(Mode.Pause);
+    }
+
+    public void ShowMenuGameOver(int wheelersDestroyedCount)
+    {
+        textMenu.GetComponent<Text>().text = $"GAME OVER\n\nYou were blown up!\nBut you managed to destroy {wheelersDestroyedCount} Wheelers.";
+        buttonTop.SetActive(true);
+        buttonTop.GetComponent<Text>().text = "Reset";
+        buttonBottom.SetActive(false);
+        ShowMenu(Mode.GameOver);
     }
 
     private void ToggleMenu(object sender, ControllerInteractionEventArgs e)
@@ -47,7 +67,7 @@ public class Menu : MonoBehaviour
 
         if (currentMode == null)
         {
-            ShowMenu(Mode.Pause);
+            ShowMenuPause(GameManager.WheelersDestroyedCount);
         }
         else
         {
@@ -55,46 +75,15 @@ public class Menu : MonoBehaviour
         }
     }
 
-    public void HideMenu()
-    {
-        currentMode = null;
-        menu.SetActive(false);
-    }
-
-    public void ShowMenu(Mode mode)
+    private void ShowMenu(Mode mode)
     {
         currentMode = mode;
-
-        switch (mode)
-        {
-            case Mode.Start:
-                ShowMenuStart();
-                break;
-
-            case Mode.Pause:
-                ShowMenuPause();
-                break;
-
-            case Mode.GameOver:
-                ShowMenuGameOver();
-                break;
-        }
-
         menu.SetActive(true);
+        TimeManager.Pause();
     }
 
-    private void ShowMenuStart()
+    private void Reset()
     {
-
-    }
-
-    private void ShowMenuPause()
-    {
-
-    }
-
-    private void ShowMenuGameOver()
-    {
-
+        GameManager.Reset();
     }
 }

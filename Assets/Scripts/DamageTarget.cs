@@ -20,6 +20,7 @@ public class DamageTarget : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
+            GameManager.IncrementDestroyedCounter();
             return;
         }
     }

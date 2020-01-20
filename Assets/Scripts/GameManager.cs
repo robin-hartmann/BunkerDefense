@@ -5,10 +5,22 @@ using UnityEngine.UI;
 
 public static class GameManager
 {
+    private static Menu menu;
+
+    public static int WheelersDestroyedCount { get; private set; }
+
     [RuntimeInitializeOnLoadMethod]
     private static void Initialize()
     {
-        // @todo show start menu
+        menu = Object.FindObjectOfType<Menu>();
+        // delay showing of menu, so game is not paused immediately
+        // otherwise the pointer doesn't work
+        Timer.Register(0.1f, () => { menu.ShowMenuStart() });
+    }
+
+    public static void IncrementDestroyedCounter()
+    {
+        WheelersDestroyedCount++;
     }
 
     public static void Reset()
@@ -19,10 +31,13 @@ public static class GameManager
         {
             spawnerManager.Reset();
         }
+
+        WheelersDestroyedCount = 0;
+        menu.ShowMenuStart();
     }
 
     public static void GameOver()
     {
-        // @todo show game over menu
+        menu.ShowMenuGameOver(WheelersDestroyedCount);
     }
 }
