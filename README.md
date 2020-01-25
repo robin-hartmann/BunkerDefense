@@ -1,7 +1,7 @@
 ## How to Play
 1. download and unzip the [latest release](../../releases/latest)
 1. make sure the controllers are turned on before starting the game, otherwise the pointer on the left controller won't work
-1. run `Tower_Defense.exe`
+1. run `TowerDefense.exe`
 1. look around and find the menu
 1. read the instructions and controls
 1. press `Start`
