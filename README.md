@@ -13,6 +13,7 @@
     1. `git submodule init`
     1. `git submodule update`
 1. open repo root folder with Unity
+1. open scene `Assets/Scenes/Main`
 
 ## Relevant Documentation
 - VRTK 3.3.0
