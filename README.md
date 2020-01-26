@@ -101,3 +101,7 @@ These instructions will get you a copy of the project up and running on your loc
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+## Acknowledgments
+
+- Special thanks to [Wladimir](https://github.com/Bljadt), [Roby](https://github.com/RobyJeitz) and [Ali](https://github.com/alibk95) for letting me publish this project
