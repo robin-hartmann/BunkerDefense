@@ -26,7 +26,7 @@ These instructions will get you a release of the project up and running on your 
 
 1. look around and find the menu
 1. read the instructions and controls
-1. press `Start`
+1. press `Start` on the menu
 
 ### Troubleshooting
 
