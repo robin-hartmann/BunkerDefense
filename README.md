@@ -17,8 +17,8 @@ These instructions will get you a release of the project up and running on your 
 ### Getting Started
 
 1. download the [latest release](../../releases/latest)
-    - 32-bit: `BunkerDefense_x86-<version>.zip`
-    - 64-bit: `BunkerDefense_x86_64-<version>.zip`
+    - 32-bit: `BunkerDefense-win_x86-<version>.zip`
+    - 64-bit: `BunkerDefense-win_x86_64-<version>.zip`
 1. unzip the archive
 1. run `BunkerDefense.exe`
 
