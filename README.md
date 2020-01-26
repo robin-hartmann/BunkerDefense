@@ -93,7 +93,7 @@ These instructions will get you a copy of the project up and running on your loc
 ## Authors
 
 - **Wladimir Fedorow** - *Models and Explosion* - [Bljadt](https://github.com/Bljadt)
-- **Robin Hartmann** - *Organization, Setup and Programming* - [robin-hartmann](https://github.com/robin-hartmann)
+- **Robin Hartmann** - *Organization, Repository Setup and Programming* - [robin-hartmann](https://github.com/robin-hartmann)
 - **Roby Jeitz** - *Models and Menu* - [RobyJeitz](https://github.com/RobyJeitz)
 - **Ali Karimi** - *Research of VR essentials* - [alibk95](https://github.com/alibk95)
 
