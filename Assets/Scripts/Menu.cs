@@ -35,7 +35,7 @@ public class Menu : MonoBehaviour
 
     public void ShowMenuStart()
     {
-        textMenu.GetComponent<Text>().text = "Welcome to Tower Defense!\n\nDestroy the Wheelers with your gun\nbefore they blow up your bunker!";
+        textMenu.GetComponent<Text>().text = "Welcome to Bunker Defense!\n\nDestroy the Wheelers with your gun\nbefore they blow up your bunker!";
 
         Button.ButtonClickedEvent buttonTopOnClick = buttonTop.GetComponent<Button>().onClick;
         buttonTopOnClick.RemoveAllListeners();
