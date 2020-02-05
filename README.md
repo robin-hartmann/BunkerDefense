@@ -5,7 +5,7 @@ Basic shooter for SteamVR - Destroy the Wheelers with your gun before they blow 
 
 ## Usage
 
-These instructions will get you a release of the project up and running on your local machine, so you can use it.
+These instructions will get you a release of this project up and running on your local machine, so that you can start using it.
 
 ### Prerequisites
 
@@ -49,7 +49,7 @@ In this situation at the top right corner of the game window above the button `S
 
 ## Development
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+These instructions will get you a copy of this project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
