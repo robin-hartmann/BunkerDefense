@@ -71,7 +71,7 @@ These instructions will get you a copy of this project up and running on your lo
     - [git repo](https://github.com/ExtendRealityLtd/VRTK/tree/3.3.0)
     - [docs](https://vrtoolkit.readme.io/v3.3.0)
         - [Instructions for using the VR Simulator](https://vrtoolkit.readme.io/docs/getting-started#section-vr-simulator)
-            - ⚠️ the simulator doesn't support movement of body or controllers while time is frozen, i.e. while the main menu is open; also, the menu for the SDK Setup Switcher doesn't work while time is frozen ⚠️
+            - ⚠️ the simulator doesn't support movement of body or controllers while time is frozen, i.e. while the main menu is open; also, the menu for the SDK Setup Switcher doesn't work while time is frozen
     - [tutorial videos](https://www.youtube.com/channel/UCWRk-LEMUNoZxUmY1wO7DBQ/search?query=vrtk+v3)
 
 
