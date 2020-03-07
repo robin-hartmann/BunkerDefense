@@ -1,20 +1,20 @@
-# BunkerDefense
+# 🕹️ BunkerDefense
 Basic shooter for SteamVR - Destroy the Wheelers with your gun before they blow up your bunker!
 
 ![Start Menu](docs/images/start-menu.png)
 
-## Usage
+## ⚡ Deployment
 
 These instructions will get you a release of this project up and running on your local machine, so that you can start using it.
 
-### Prerequisites
+### 📋 Prerequisites
 
 - Windows
     - 64-bit or 32-bit version
 - [SteamVR](https://store.steampowered.com/app/250820/SteamVR/) - The ultimate tool for experiencing VR content on the hardware of your choice
     * you also need a compatible headset
 
-### Getting Started
+### 🚀 Getting Started
 
 1. download the [latest release](../../releases/latest)
     - 32-bit: `BunkerDefense-win_x86-<version>.zip`
@@ -22,13 +22,13 @@ These instructions will get you a release of this project up and running on your
 1. unzip the archive
 1. run `BunkerDefense.exe`
 
-### How to Play
+### 🕹️ How to Play
 
 1. look around and find the menu
 1. read the instructions and controls
 1. press `Start` on the menu
 
-### Troubleshooting
+### 🐞 Troubleshooting
 
 #### The pointer on the left controller doesn't work / is stuck to the ground
 
@@ -47,17 +47,17 @@ Due to a limitation of VRTK, the menu doesn't work properly when time is frozen,
 In this situation at the top right corner of the game window above the button `Switch SDK Setup` it should say `VRSimulator`. This means you are using the VR Simulator, which is only useful for development purposes. Instead of using the VR Simulator with mouse and keyboard, you need to get SteamVR and connect a compatible headset and then restart the game.
 
 
-## Development
+## 🛠️ Development
 
 These instructions will get you a copy of this project up and running on your local machine for development and testing purposes.
 
-### Prerequisites
+### 📋 Prerequisites
 
 - [Unity](https://unity3d.com/get-unity/download) - Real-time development platform
 - [SteamVR](https://store.steampowered.com/app/250820/SteamVR/) - The ultimate tool for experiencing VR content on the hardware of your choice
     * you also need a compatible headset
 
-### Getting Started
+### 🚀 Getting Started
 
 1. clone this repo
     - to skip steps 2 and 3, use `git clone --recurse-submodules`
@@ -66,7 +66,7 @@ These instructions will get you a copy of this project up and running on your lo
 1. open repo root folder with Unity
 1. open scene `Assets/Scenes/Main`
 
-### Relevant Documentation
+### 📚 Relevant Documentation
 - VRTK 3.3.0
     - [git repo](https://github.com/ExtendRealityLtd/VRTK/tree/3.3.0)
     - [docs](https://vrtoolkit.readme.io/v3.3.0)
@@ -75,14 +75,14 @@ These instructions will get you a copy of this project up and running on your lo
     - [tutorial videos](https://www.youtube.com/channel/UCWRk-LEMUNoZxUmY1wO7DBQ/search?query=vrtk+v3)
 
 
-## Built With
+## 🔧 Built With
 
-### Libraries
+### 🏛️ Libraries
 
 - [VRTK 3.3.0](https://github.com/ExtendRealityLtd/VRTK/tree/3.3.0) - A productive VR Toolkit for rapidly building VR solutions in Unity3d
 - [UnityTimer](https://github.com/akbiggs/UnityTimer) - Powerful and convenient library for running actions after a delay in Unity3D
 
-### Guides
+### 🎓 Guides
 
 - [How to Git with Unity](https://thoughtbot.com/blog/how-to-git-with-unity)
     - `.gitattributes` taken from the [VRTK git repo](https://github.com/ExtendRealityLtd/VRTK/blob/master/.gitattributes)
@@ -90,7 +90,7 @@ These instructions will get you a copy of this project up and running on your lo
     - we use VRTK 3.3.0 instead
 
 
-## Authors
+## 👨‍💻 Authors
 
 - **Wladimir Fedorow** - *Models and Explosion* - [Bljadt](https://github.com/Bljadt)
 - **Robin Hartmann** - *Organization, Repository Setup and Programming* - [robin-hartmann](https://github.com/robin-hartmann)
@@ -98,10 +98,10 @@ These instructions will get you a copy of this project up and running on your lo
 - **Ali Karimi** - *Research of VR essentials* - [alibk95](https://github.com/alibk95)
 
 
-## License
+## 📃 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
-## Acknowledgments
+## 👍 Acknowledgments
 
 - Special thanks to [Wladimir](https://github.com/Bljadt), [Roby](https://github.com/RobyJeitz) and [Ali](https://github.com/alibk95) for letting me publish this project
