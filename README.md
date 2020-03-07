@@ -75,7 +75,7 @@ These instructions will get you a copy of this project up and running on your lo
     - [tutorial videos](https://www.youtube.com/channel/UCWRk-LEMUNoZxUmY1wO7DBQ/search?query=vrtk+v3)
 
 
-## 🔧 Built With
+## 🧰 Built With
 
 ### 🏛️ Libraries
 
