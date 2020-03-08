@@ -66,7 +66,7 @@ These instructions will get you a copy of this project up and running on your lo
 1. open repo root folder with Unity
 1. open scene `Assets/Scenes/Main`
 
-### 📚 Relevant Documentation
+### 📘 Relevant Documentation
 - VRTK 3.3.0
     - [git repo](https://github.com/ExtendRealityLtd/VRTK/tree/3.3.0)
     - [docs](https://vrtoolkit.readme.io/v3.3.0)
@@ -77,17 +77,17 @@ These instructions will get you a copy of this project up and running on your lo
 
 ## 🧰 Built With
 
-### 🏛️ Libraries
-
-- [VRTK 3.3.0](https://github.com/ExtendRealityLtd/VRTK/tree/3.3.0) - A productive VR Toolkit for rapidly building VR solutions in Unity3d
-- [UnityTimer](https://github.com/akbiggs/UnityTimer) - Powerful and convenient library for running actions after a delay in Unity3D
-
-### 🎓 Guides
+### 📚 Resources
 
 - [How to Git with Unity](https://thoughtbot.com/blog/how-to-git-with-unity)
     - `.gitattributes` taken from the [VRTK git repo](https://github.com/ExtendRealityLtd/VRTK/blob/master/.gitattributes)
 - [VR in Unity: A Beginner's Guide (using VRTK)](https://learn.unity.com/project/vr-in-unity-a-beginner-s-guide)
     - we use VRTK 3.3.0 instead
+
+### 🏛️ Libraries
+
+- [VRTK 3.3.0](https://github.com/ExtendRealityLtd/VRTK/tree/3.3.0) - A productive VR Toolkit for rapidly building VR solutions in Unity3d
+- [UnityTimer](https://github.com/akbiggs/UnityTimer) - Powerful and convenient library for running actions after a delay in Unity3D
 
 
 ## 👨‍💻 Authors
@@ -100,7 +100,7 @@ These instructions will get you a copy of this project up and running on your lo
 
 ## 📃 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👍 Acknowledgments
 
