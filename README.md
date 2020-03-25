@@ -1,5 +1,6 @@
 # 🕹️ BunkerDefense
-Basic shooter for SteamVR - Destroy the Wheelers with your gun before they blow up your bunker! (educational project)
+
+Basic shooter for SteamVR - Destroy the Wheelers with your gun before they blow up your bunker!
 
 ![Start Menu](docs/images/start-menu.png)
 
