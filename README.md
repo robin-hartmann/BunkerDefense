@@ -10,15 +10,15 @@ These instructions will get you a release of this project up and running on your
 ### 📋 Prerequisites
 
 - Windows
-    - 64-bit or 32-bit version
+  - 64-bit or 32-bit version
 - [SteamVR](https://store.steampowered.com/app/250820/SteamVR/) - The ultimate tool for experiencing VR content on the hardware of your choice
-    * you also need a compatible headset
+  - you also need a compatible headset
 
 ### 🚀 Getting Started
 
 1. download the [latest release](../../releases/latest)
-    - 32-bit: `BunkerDefense-win_x86-<version>.zip`
-    - 64-bit: `BunkerDefense-win_x86_64-<version>.zip`
+   - 32-bit: `BunkerDefense-win_x86-<version>.zip`
+   - 64-bit: `BunkerDefense-win_x86_64-<version>.zip`
 1. unzip the archive
 1. run `BunkerDefense.exe`
 
@@ -46,7 +46,6 @@ Due to a limitation of VRTK, the menu doesn't work properly when time is frozen,
 
 In this situation at the top right corner of the game window above the button `Switch SDK Setup` it should say `VRSimulator`. This means you are using the VR Simulator, which is only useful for development purposes. Instead of using the VR Simulator with mouse and keyboard, you need to get SteamVR and connect a compatible headset and then restart the game.
 
-
 ## 🛠️ Development
 
 These instructions will get you a copy of this project up and running on your local machine for development and testing purposes.
@@ -55,48 +54,46 @@ These instructions will get you a copy of this project up and running on your lo
 
 - [Unity](https://unity3d.com/get-unity/download) - Real-time development platform
 - [SteamVR](https://store.steampowered.com/app/250820/SteamVR/) - The ultimate tool for experiencing VR content on the hardware of your choice
-    * you also need a compatible headset
+  - you also need a compatible headset
 
 ### 🚀 Getting Started
 
 1. clone this repo
-    - to skip steps 2 and 3, use `git clone --recurse-submodules`
+   - to skip steps 2 and 3, use `git clone --recurse-submodules`
 1. open repo root folder in terminal
 1. download all submodules using `git submodule update --init --recursive`
 1. open repo root folder with Unity
 1. open scene `Assets/Scenes/Main`
 
 ### 📘 Relevant Documentation
-- VRTK 3.3.0
-    - [git repo](https://github.com/ExtendRealityLtd/VRTK/tree/3.3.0)
-    - [docs](https://vrtoolkit.readme.io/v3.3.0)
-        - [Instructions for using the VR Simulator](https://vrtoolkit.readme.io/docs/getting-started#section-vr-simulator)
-            - ⚠️ the simulator doesn't support movement of body or controllers while time is frozen, i.e. while the main menu is open; also, the menu for the SDK Setup Switcher doesn't work while time is frozen
-    - [tutorial videos](https://www.youtube.com/channel/UCWRk-LEMUNoZxUmY1wO7DBQ/search?query=vrtk+v3)
 
+- VRTK 3.3.0
+  - [git repo](https://github.com/ExtendRealityLtd/VRTK/tree/3.3.0)
+  - [docs](https://vrtoolkit.readme.io/v3.3.0)
+    - [Instructions for using the VR Simulator](https://vrtoolkit.readme.io/docs/getting-started#section-vr-simulator)
+      - ⚠️ the simulator doesn't support movement of body or controllers while time is frozen, i.e. while the main menu is open; also, the menu for the SDK Setup Switcher doesn't work while time is frozen
+  - [tutorial videos](https://www.youtube.com/channel/UCWRk-LEMUNoZxUmY1wO7DBQ/search?query=vrtk+v3)
 
 ## 🧰 Built With
 
 ### 📚 Resources
 
 - [How to Git with Unity](https://thoughtbot.com/blog/how-to-git-with-unity)
-    - `.gitattributes` taken from the [VRTK git repo](https://github.com/ExtendRealityLtd/VRTK/blob/master/.gitattributes)
+  - `.gitattributes` taken from the [VRTK git repo](https://github.com/ExtendRealityLtd/VRTK/blob/master/.gitattributes)
 - [VR in Unity: A Beginner's Guide (using VRTK)](https://learn.unity.com/project/vr-in-unity-a-beginner-s-guide)
-    - we use VRTK 3.3.0 instead
+  - we use VRTK 3.3.0 instead
 
 ### 🏛️ Libraries
 
 - [VRTK 3.3.0](https://github.com/ExtendRealityLtd/VRTK/tree/3.3.0) - A productive VR Toolkit for rapidly building VR solutions in Unity3d
 - [UnityTimer](https://github.com/akbiggs/UnityTimer) - Powerful and convenient library for running actions after a delay in Unity3D
 
-
 ## 👨‍💻 Authors
 
-- **Wladimir Fedorow** - *Models and Explosion* - [Bljadt](https://github.com/Bljadt)
-- **Robin Hartmann** - *Organization, Repository Setup and Programming* - [robin-hartmann](https://github.com/robin-hartmann)
-- **Roby Jeitz** - *Models and Menu* - [RobyJeitz](https://github.com/RobyJeitz)
-- **Ali Karimi** - *Research of VR essentials* - [alibk95](https://github.com/alibk95)
-
+- **Wladimir Fedorow** - _Models and Explosion_ - [Bljadt](https://github.com/Bljadt)
+- **Robin Hartmann** - _Organization, Repository Setup and Programming_ - [robin-hartmann](https://github.com/robin-hartmann)
+- **Roby Jeitz** - _Models and Menu_ - [RobyJeitz](https://github.com/RobyJeitz)
+- **Ali Karimi** - _Research of VR essentials_ - [alibk95](https://github.com/alibk95)
 
 ## 📃 License
 
