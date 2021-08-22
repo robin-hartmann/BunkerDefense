@@ -6,7 +6,7 @@ Basic shooter for SteamVR - Destroy the Wheelers with your gun before they blow 
 
 ## ⚡ Deployment
 
-These instructions will get you a release of this project up and running on your local machine, so that you can start using it.
+These instructions will get a release of this project up and running on your local machine, so that you can start using it.
 
 ### 📋 Prerequisites
 
@@ -33,7 +33,7 @@ These instructions will get you a release of this project up and running on your
 
 #### The pointer on the left controller doesn't work / is stuck to the ground
 
-Restarting the game should fix this. Next time, make sue the controllers are turned on before starting the game.
+Restarting the game should fix this. Next time, make sure the controllers are turned on before starting the game.
 
 #### The VR headset doesn't show the game, even though the game window is open and running on the monitor
 
@@ -43,9 +43,9 @@ In this situation at the top right corner of the game window above the button `S
 
 Due to a limitation of VRTK, the menu doesn't work properly when time is frozen, i.e. while the main menu is open. To switch between the VR Simulator and SteamVR, you will need to connect or disconnect the VR headset and then restart the game. If SteamVR is ready upon starting the game, the game will choose SteamVR, otherwise it will fall back to the VR Simulator.
 
-#### Neither the character, nor the controllers can be moved, only looking around works
+#### Neither the character nor the controllers can be moved, only looking around works
 
-In this situation at the top right corner of the game window above the button `Switch SDK Setup` it should say `VRSimulator`. This means you are using the VR Simulator, which is only useful for development purposes. Instead of using the VR Simulator with mouse and keyboard, you need to get SteamVR and connect a compatible headset and then restart the game.
+In this situation at the top right corner of the game window above the button `Switch SDK Setup` it should say `VRSimulator`. This means you are using the VR Simulator, which is only useful for development purposes. Instead of using the VR Simulator with mouse and keyboard, you need to start SteamVR and connect a compatible headset and then restart the game.
 
 ## 🛠️ Development
 
